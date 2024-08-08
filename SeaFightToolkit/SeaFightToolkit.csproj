@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <PackageId>$(AssemblyName)_SampleTest</PackageId>
+    <Title>Набор стратегий компьютерного оппонента и общих классов для игры в Морской бой</Title>
+    <PackageTags>Морской бой;Sea fight;AI;компьютер;оппонент</PackageTags>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+</Project>

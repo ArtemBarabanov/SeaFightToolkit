@@ -1,0 +1,33 @@
+name: SeaFight Build
+
+on: [push]
+
+env:
+  DOTNET_VERSION: "8.0.x"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: ${{ env.DOTNET_VERSION }}
+
+      - name: Install dependencies
+        run: dotnet restore ./SeaFightToolkit/SeaFightToolkit.sln
+
+      - name: Build
+        run: dotnet build ./SeaFightToolkit/SeaFightToolkit.sln --configuration Release --no-restore
+
+      - name: Run tests
+        run: dotnet test ./SeaFightToolkit/SeaFightToolkit.sln --configuration Release --no-build
+
+      - name: Pack nuget
+        run: dotnet pack ./SeaFightToolkit/SeaFightToolkit.sln -c Release -p:Version=1.0.${{github.run_number}} --no-build --output .
+
+      - name: Push to nuget.org
+        run: dotnet nuget push "*.nupkg" --api-key ${{secrets.nuget_api_key}} --source https://api.nuget.org/v3/index.json

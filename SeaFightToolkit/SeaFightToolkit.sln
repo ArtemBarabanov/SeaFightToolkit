@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35013.160
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SeaFightToolkit", "SeaFightToolkit.csproj", "{0EB09B81-C7FD-4D32-A044-1C55ADFB8ED7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeaFightToolkit.Tests", "..\SeaFightToolkit.Tests\SeaFightToolkit.Tests.csproj", "{0DD0A49C-9F4F-4401-8F54-4C3513C2EA01}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0EB09B81-C7FD-4D32-A044-1C55ADFB8ED7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EB09B81-C7FD-4D32-A044-1C55ADFB8ED7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EB09B81-C7FD-4D32-A044-1C55ADFB8ED7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EB09B81-C7FD-4D32-A044-1C55ADFB8ED7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DD0A49C-9F4F-4401-8F54-4C3513C2EA01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DD0A49C-9F4F-4401-8F54-4C3513C2EA01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DD0A49C-9F4F-4401-8F54-4C3513C2EA01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DD0A49C-9F4F-4401-8F54-4C3513C2EA01}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C9E79F2A-A5D7-4B7E-B23D-085B51A7D64A}
+	EndGlobalSection
+EndGlobal
